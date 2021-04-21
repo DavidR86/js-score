@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+	<title>Piano Notes</title>
+	<link rel = "stylesheet" type = "text/css" href = "stylesheets/style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+	<link rel="stylesheet" href="./lib/piano_style.css">
+	<script src="./lib/piano.js"></script>
+    </head>
+
+    <body>
+	<p id="MIDIinputs">Detected MIDI inputs: None</p>
+	<div class="btn-group">
+	    <div class="note-selection">
+		<button id="do-b" class="notes a" data-name="c">Do / C</button>
+		<button id="re-b" class="notes a" data-name="d">Re / D</button>
+		<button id="mi-b" class="notes a" data-name="e">Mi / E</button>
+		<button id="fa-b" class="notes a" data-name="f">Fa / F</button>
+		<button id="sol-b" class="notes a" data-name="g">Sol / G</button>
+		<button id="la-b" class="notes a" data-name="a">La / A</button>
+		<button id="si-b" class="notes a" data-name="b">Si / B</button>
+	    </div>
+	    <div class="octave-selection">
+		<button id="oct-2-b" class="octave a down" data-name="2">Octave 2</button>
+		<button id="oct-3-b" class="octave a down" data-name="3">Octave 3</button>
+		<button id="oct-4-b" class="octave a" data-name="4">Octave 4</button>
+		<button id="oct-5-b" class="octave a down" data-name="5">Octave 5</button>
+	    </div>
+	    <div class="accidental-selection">
+		<button id="flats-b" class="accidnetal a down">flats</button>
+		<button id="sharps-b" class="accidental a down">sharps</button>
+		<button id="increase-speed" class="a"> Speed 📈 </button>
+		<button id="chords" class="a down"> Chords ☠️</button>
+	    </div>
+	</div>
+	<div id="container">
+	    <div id="boo"></div>
+	</div>
+	<div id="score">
+	    <p id="score-label" class="score-p">Score: 0</p>
+	    <p id="highscore-label" class="score-p">Highscore: 0</p>
+	</div>
+	<div id="controls">
+	    <button id="start" >Start</button>
+	    <!--
+		 <button id='add-note'>Add Note</button>
+		 <button id='right-answer'>Right Answer</button>
+	    -->
+	</div>
+	<div id="keyboardContainer"></div>
+    </body>
+    <script src="./lib/vexflow-debug.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/webmidi"></script>
+    <script src="./javascripts/score.js"></script>
+    <script src="./javascripts/main.js"></script>
+    <script src="./javascripts/piano.js"></script>
+</html>

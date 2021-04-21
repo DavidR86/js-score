@@ -1,0 +1,133 @@
+html, body {
+    background-color: #333;
+    box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5);
+    height: 100%;
+    min-height: 100%;
+    overflow-y: hidden;
+}
+
+#container {
+    width: 600px;
+    height: 200px;
+    overflow: hidden;
+    border: 2px solid orange;
+    margin: auto;
+}
+
+#container > div {
+    width: 10000px;
+    height: 120px;
+    white-space: nowrap;
+}
+
+#keyboardContainer {
+    display: flex;
+    margin: auto;
+}
+
+.DA-Keyboardcontainer {
+    margin: auto;
+}
+
+#score {
+    display: flex;
+    margin: auto;
+    width: 600px;
+}
+
+.score-p {
+    flex-grow: 1;
+    color: lightgray;
+    text-align: center;
+    font-family: monospace;
+    font-size: 16px;
+}
+
+#MIDIinputs {
+    color: lightgray;
+    position: absolute;
+}
+
+#controls {
+    padding: 10x;
+    width: 600px;
+    margin: auto;
+    display: flex;
+}
+
+.btn-group {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    width: 600px;
+    margin: auto;
+}
+
+.note-selection {
+    display: flex;
+}
+
+.octave-selection {
+    display: flex;
+}
+
+.accidental-selection {
+    display: flex;
+}
+
+.scroll {
+    transition: transform 5s linear, opacity 0.5s ease-out, fill 0.2s linear;
+}
+
+.scrolling {
+    transform: translate(-500px, 0);
+}
+
+.correct {
+    opacity: 0;
+}
+
+.too-slow {
+    transform: translate(-400px, 2000px);
+}
+
+button {
+    background-color: orange;
+    border-radius: 8px;
+    padding: 5px 5px;
+    margin: 2px;
+    transition-duration: 0.4s;
+    display: inline-block;
+    margin: 4px 2px;
+    font-size: 16px;
+    flex-grow: 1;
+    font-family: monospace;
+    border: 2px solid transparent;
+}
+
+button:focus {
+    outline:0;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+.a {
+}
+
+.a.down {
+    background-color: #333;
+    border-radius: 8px;
+    border: 2px solid orange;
+    color: lightgray;
+}
+
+.last-right {
+    background: green !important;
+}
+
+.last-wrong {
+    background: red !important;
+}
+
+
