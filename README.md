@@ -1,6 +1,6 @@
 # js-score
 
-### Web app to help learn with learning piano notes.
+### Web app to help with learning piano notes.
 
 ![Preview](media/js-score.png)
 
